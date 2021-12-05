@@ -7,5 +7,3 @@ Welcome! This is a weather application built using JavaScript, HTML, and CSS. Fe
 <h1 align="center">How to Run the Application</h1>
 You may choose to run this app either locally or online through the hyperlink in the title of this file. If you want to run it locally, you may download the ZIP file and open the index file in your chosen web browser. Make sure that you enable location or it will not work properly. 
 </p>
-
-![example output](https://github.com/LHwang01/weather-app/blob/main/weather-app.png)
