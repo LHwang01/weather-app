@@ -45,8 +45,4 @@ window.addEventListener('load', () => {
     } else {
         h1.textContent = "Please enable location."
     }
-
-    function setIcons(icon, iconID) {
-        
-    }
 });
