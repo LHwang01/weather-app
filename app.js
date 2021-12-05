@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
                     baseIconUrl = "http://openweathermap.org/img/wn/"
                     finalIconUrl = baseIconUrl + data.weather[0].icon + "@2x.png";
 
-                    temperatureDegree.textContent = Math.round(data.main.temp);
+                    temperatureDegree.textContent = data.main.temp;
                     temperatureDescription.textContent = data.weather[0].main;
                     locationTimezone.textContent = data.name;
 
@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
                             temperatureDegree.textContent = Math.round(celsius);
                         } else {
                             temperatureSpan.textContent = "F";
-                            temperatureDegree.textContent = Math.round(data.main.temp);
+                            temperatureDegree.textContent = data.main.temp;
                         }
                     })
             })
