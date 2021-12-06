@@ -20,8 +20,8 @@ window.addEventListener('load', () => {
                 })
                 .then(data => {
                     console.log(data);
-                    baseIconUrl = "http://openweathermap.org/img/wn/"
-                    finalIconUrl = baseIconUrl + data.weather[0].icon + "@2x.png";
+                    // baseIconUrl = "http://openweathermap.org/img/wn/"
+                    // finalIconUrl = baseIconUrl + data.weather[0].icon + "@2x.png";
 
                     temperatureDegree.textContent = Math.round(data.main.temp);
                     temperatureDescription.textContent = data.weather[0].main;
