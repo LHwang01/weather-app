@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
             longitude = position.coords.longitude;  
             latitude = position.coords.latitude;
 
-            const api = `api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=e70cf8b646e845e2a292cee7b31afc11&units=imperial`;
+            const api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=e70cf8b646e845e2a292cee7b31afc11&units=imperial`;
                 
             fetch(api)
                 .then(response => {
@@ -20,8 +20,8 @@ window.addEventListener('load', () => {
                 })
                 .then(data => {
                     console.log(data);
-                    // baseIconUrl = "http://openweathermap.org/img/wn/"
-                    // finalIconUrl = baseIconUrl + data.weather[0].icon + "@2x.png";
+                    baseIconUrl = "http://openweathermap.org/img/wn/"
+                    finalIconUrl = baseIconUrl + data.weather[0].icon + "@2x.png";
 
                     temperatureDegree.textContent = Math.round(data.main.temp);
                     temperatureDescription.textContent = data.weather[0].main;
@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
 
                     let celsius = (temperatureDegree.textContent - 32) * (5 / 9);
 
-                    // document.getElementById("icon").src = finalIconUrl;
+                    document.getElementById("icon").src = finalIconUrl;
 
                     temperatureSection.addEventListener('click', () => {
                         if (temperatureSpan.textContent === "F") {
