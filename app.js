@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
 
                     let celsius = (temperatureDegree.textContent - 32) * (5 / 9);
 
-                    document.getElementById("icon").src = finalIconUrl;
+                    // document.getElementById("icon").src = finalIconUrl;
 
                     temperatureSection.addEventListener('click', () => {
                         if (temperatureSpan.textContent === "F") {
